@@ -61,7 +61,6 @@ function keyPressClose(event) {
 }
 
 function next() {
-  console.dir(currentItem.nextElementSibling);
   if (currentItem.nextElementSibling === null) {
     currentItem = currentItem.closest('ul').firstElementChild;
   } else {
@@ -74,7 +73,6 @@ function next() {
 }
 
 function prev() {
-  console.log(currentItem);
   if (currentItem.previousElementSibling === null) {
     currentItem = currentItem.closest('ul').lastElementChild;
   } else {
